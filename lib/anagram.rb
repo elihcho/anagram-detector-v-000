@@ -4,12 +4,12 @@ class Anagram
 
   def initialize(word)
     @word = word
+    @word = @word.split(//)
   end
 
   def match(arr)
-    arr_word = @word.split(//)
     arr.split(' ').collect.each do |i|
-      if i.sort == arr_word.sort
+      if i.sort == @word.sort
         i
       end
     end
