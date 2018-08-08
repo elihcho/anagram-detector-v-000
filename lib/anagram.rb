@@ -10,6 +10,8 @@ class Anagram
     arr_word = @word.split(//)
     arr.split(' ').collect.each do |i|
       if i.sort == arr_word.sort
+        i
+      end
     end
   end
 
